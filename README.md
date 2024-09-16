@@ -39,3 +39,8 @@ Each profile will have the ability to save strings they have created or strings 
 - **Database Data** - Any string that is created and saved will be stored in the websites database.
 - **Websocket Data** - On the Frequently Used page, users have the ability to see strings that others have shared.
 
+![StringBuilderSketch](StringBuilder.jpg)
+
+![FrequentlyUsedSketch](FrequentlyUsed.jpg)
+
+![SavedStringsSketch](SavedStrings.jpg)

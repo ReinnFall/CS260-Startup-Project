@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Copy to Clipboard Example</title>
+  <style>
+    /* Basic styles */
+    #inputBar {
+      width: 300px;
+      padding: 10px;
+    }
+    #copyButton {
+      padding: 10px;
+      cursor: pointer;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Copy Text Example</h2>
+  
+  <!-- Input field where the string will be placed -->
+  <input type="text" value="Copy this text" id="inputBar">
+  
+  <!-- Button to copy the string -->
+  <button id="copyButton">Copy Text</button>
+  
+  <script>
+    // JavaScript to copy text to clipboard
+    document.getElementById('copyButton').addEventListener('click', function() {
+      // Select the input field
+      var inputBar = document.getElementById("inputBar");
+      
+      // Select the text inside the input field
+      inputBar.select();
+      inputBar.setSelectionRange(0, 99999); // For mobile devices
+      
+      // Copy the text inside the input field
+      document.execCommand("copy");
+      
+      // Optional: Notify the user that the text was copied
+      alert("Copied the text: " + inputBar.value);
+    });
+  </script>
+
+</body>
+</html>

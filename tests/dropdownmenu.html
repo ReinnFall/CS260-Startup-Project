@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reveal Hidden Content</title>
+  <style>
+    /* Initially hide the content */
+    #hiddenContent {
+      display: none; /* Content is hidden */
+      padding: 20px;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      margin-top: 10px;
+    }
+
+    /* Button styling */
+    #revealButton {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /* Optional hover effect */
+    #revealButton:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Reveal Hidden Content Example</h2>
+
+  <!-- Button to reveal the content -->
+  <button id="revealButton">Show More</button>
+  
+  <!-- Hidden content -->
+  <div id="hiddenContent">
+    <p>This is the hidden content that gets revealed when you click the button!</p>
+    <p>You can put any HTML content here, like text, images, or even other interactive elements.</p>
+  </div>
+
+  <script>
+    // Get the button and the hidden content
+    const revealButton = document.getElementById('revealButton');
+    const hiddenContent = document.getElementById('hiddenContent');
+    
+    // Add click event listener to the button
+    revealButton.addEventListener('click', function() {
+      // Toggle the display of the hidden content
+      if (hiddenContent.style.display === 'none') {
+        hiddenContent.style.display = 'block'; // Show the content
+        revealButton.textContent = 'Show Less'; // Change button text
+      } else {
+        hiddenContent.style.display = 'none'; // Hide the content
+        revealButton.textContent = 'Show More'; // Change button text back
+      }
+    });
+  </script>
+
+</body>
+</html>

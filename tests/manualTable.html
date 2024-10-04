@@ -1,92 +1,63 @@
 <!DOCTYPE html>
-<html lang="eng">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Pokemon Go StringBuilder</title>
-        <link rel="icon" href="/images/poliwhirl.ico" />
-    </head>
-    <body>
-        <header>
-            <nav>
-                <menu>
-                    <li><a href="index.html">Home</a></li>
-                </menu>
-            </nav>
-            <h1>Pokemon Go StringBuilder</h1>
-        </header>
-        <div>
-            <!-- Button to Generate String-->
-            <button id = "Generate String Button"> Generate String</button>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Original 151 Pokémon</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
 
-            <!-- Input field where the string will be placed -->
-            <input type="text" value="Copy this text" id="inputBar">
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
 
-            <!-- Button to copy the string -->
-            <button id="copyButton">Copy Text</button>
-        </div>
-        <table>
-            <tr>
-              <!-- First Row (6 checkboxes) -->
-              <td>
-                <input type="checkbox" id="checkboxShiny">
-                <label for="checkboxShiny">Shiny</label>
-              </td>
-              <td>
-                <input type="checkbox" id="checkboxLegendary">
-                <label for="checkboxLegendary">Legendary</label>
-              </td>
-              <td>
-                <input type="checkbox" id="checkboxMythical">
-                <label for="checkboxMythical">Mythical</label>
-              </td>
-              <td>
-                <input type="checkbox" id="checkboxLucky">
-                <label for="checkboxLucky">Lucky</label>
-              </td>
-              <td>
-                <input type="checkbox" id="checkboxTraded">
-                <label for="checkboxTraded">Traded</label>
-              </td>
-              <td>
-                <input type="checkbox" id="checkboxShadow">
-                <label for="checkboxShadow">Shadow</label>
-              </td>
-            </tr>
-            
-            <tr>
-              <!-- Second Row (6 checkboxes) -->
-              <td>
-                <input type="checkbox" id="checkboxPurified">
-                <label for="checkboxPurified">Purified</label>
-              </td>
-              <td>
-                <input type="checkbox" id="checkboxDynamax">
-                <label for="checkboxDynamax">Dynamax</label>
-              </td>
-              <td>
-                <input type="checkbox" id="checkboxGigantamax">
-                <label for="checkboxGigantamax">Gigantamax</label>
-              </td>
-              <td>
-                <input type="checkbox" id="checkbox4*">
-                <label for="checkbox4*">4*</label>
-              </td>
-              <td>
-                <input type="checkbox" id="checkbox3*">
-                <label for="checkbox3*">3*</label>
-              </td>
-              <td>
-                <input type="checkbox" id="checkboxatched">
-                <label for="checkboxatched">Hatched</label>
-              </td>
-            </tr>
-          </table>
-          <!-- I will eventually use JS to dynamically create checkboxes for each Pokemon-->
-          <table id="KantoTable">
-            <tbody> Kanto Table
-                <button id="revealButton">Show All</button>
-                <button id="selectAllButton">Select All</button>
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        tr {
+            height: 50px; /* Set a fixed height for the row */
+        }
+
+        label {
+            display: flex;
+            align-items: center;
+            cursor: pointer; /* Change cursor to pointer for checkboxes */
+        }
+
+        .checkbox {
+            margin-right: 10px; /* Space between checkbox and label */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Original 151 Pokémon</h1>
+        <table id="pokemonTable">
+            <tbody>
                 <tr>
                     <td><label><input type="checkbox" class="checkbox">Bulbasaur</label></td>
                     <td><label><input type="checkbox" class="checkbox">Ivysaur</label></td>
@@ -272,5 +243,6 @@
                 </tr>
             </tbody>
         </table>
-    </body>
-</html> 
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select All Checkboxes</title>
+  <style>
+    /* Styling checkboxes */
+    input[type="checkbox"] {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Select All Example</h2>
+  
+  <!-- "Select All" checkbox -->
+  <input type="checkbox" id="selectAll" onclick="toggleAllCheckboxes(this)">
+  <label for="selectAll"><strong>Select All</strong></label>
+
+  <br><br>
+
+  <!-- Checkboxes that will be controlled by "Select All" -->
+  <input type="checkbox" class="itemCheckbox" id="checkbox1">
+  <label for="checkbox1">Option 1</label>
+  <br>
+  <input type="checkbox" class="itemCheckbox" id="checkbox2">
+  <label for="checkbox2">Option 2</label>
+  <br>
+  <input type="checkbox" class="itemCheckbox" id="checkbox3">
+  <label for="checkbox3">Option 3</label>
+  <br>
+  <input type="checkbox" class="itemCheckbox" id="checkbox4">
+  <label for="checkbox4">Option 4</label>
+  <br>
+  <input type="checkbox" class="itemCheckbox" id="checkbox5">
+  <label for="checkbox5">Option 5</label>
+
+  <script>
+    // Function to toggle all checkboxes based on the "Select All" checkbox state
+    function toggleAllCheckboxes(source) {
+      // Get all checkboxes with class "itemCheckbox"
+      const checkboxes = document.querySelectorAll('.itemCheckbox');
+      
+      // Loop through all checkboxes and set their "checked" property to match the "Select All" checkbox
+      checkboxes.forEach(checkbox => {
+        checkbox.checked = source.checked;
+      });
+    }
+  </script>
+
+</body>
+</html>

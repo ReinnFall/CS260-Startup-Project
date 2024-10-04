@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Original 151 Pokémon</title>
+  
+</head>
+<body>
+    <div class="container">
+        <h1>Original 151 Pokémon</h1>
+        <table id="pokemonTable">
+            <tbody>
+                <!-- Pokémon rows with checkboxes will be dynamically added here -->
+            </tbody>
+        </table>
+    </div>
+    <script>
+        // List of the original 151 Pokémon
+        const pokemonList = [
+            "Bulbasaur", "Ivysaur", "Venusaur", "Charmander", "Charmeleon", "Charizard",
+            "Squirtle", "Wartortle", "Blastoise", "Caterpie", "Metapod", "Butterfree",
+            "Weedle", "Kakuna", "Beedrill", "Pidgey", "Pidgeotto", "Pidgeot", "Rattata",
+            "Raticate", "Spearow", "Fearow", "Ekans", "Arbok", "Pikachu", "Raichu",
+            "Sandshrew", "Sandslash", "Nidoran♀", "Nidorina", "Nidoqueen", "Nidoran♂",
+            "Nidorino", "Nidoking", "Clefairy", "Clefable", "Vulpix", "Ninetales",
+            "Jigglypuff", "Wigglytuff", "Zubat", "Golbat", "Oddish", "Gloom",
+            "Vileplume", "Paras", "Parasect", "Venonat", "Venomoth", "Diglett",
+            "Dugtrio", "Meowth", "Persian", "Psyduck", "Golduck", "Mankey",
+            "Primeape", "Growlithe", "Arcanine", "Poliwag", "Poliwhirl", "Poliwrath",
+            "Abra", "Kadabra", "Alakazam", "Machop", "Machoke", "Machamp",
+            "Bellsprout", "Weepinbell", "Victreebel", "Tentacool", "Tentacruel",
+            "Geodude", "Graveler", "Golem", "Ponyta", "Rapidash", "Slowpoke",
+            "Slowbro", "Magnemite", "Magneton", "Farfetch'd", "Doduo", "Dodrio",
+            "Seel", "Dewgong", "Grimer", "Muk", "Shellder", "Cloyster",
+            "Gastly", "Haunter", "Gengar", "Onix", "Drowzee", "Hypno",
+            "Krabby", "Kingler", "Voltorb", "Electrode", "Exeggcute", "Exeggutor",
+            "Cubone", "Marowak", "Hitmonlee", "Hitmonchan", "Lickitung", "Koffing",
+            "Weezing", "Rhyhorn", "Rhydon", "Chansey", "Tangela", "Kangaskhan",
+            "Horsea", "Seadra", "Goldeen", "Seaking", "Staryu", "Starmie",
+            "Mr. Mime", "Scyther", "Jynx", "Electabuzz", "Magmar", "Pinsir",
+            "Tauros", "Magikarp", "Gyarados", "Lapras", "Ditto", "Eevee",
+            "Vaporeon", "Jolteon", "Flareon", "Porygon", "Omanyte", "Omastar",
+            "Kabuto", "Kabutops", "Aerodactyl", "Snorlax", "Articuno", "Zapdos",
+            "Moltres", "Dratini", "Dragonair", "Dragonite", "Mewtwo", "Mew"
+        ];
+
+        // Reference to the table body
+        const tableBody = document.querySelector("#pokemonTable tbody");
+
+        // Function to populate the table with checkboxes
+        function populateTable() {
+            let row;
+            pokemonList.forEach((pokemon, index) => {
+                // Create a new row after every 10 Pokémon
+                if (index % 10 === 0) {
+                    row = document.createElement("tr");
+                    tableBody.appendChild(row);
+                }
+
+                // Create a cell for the checkbox
+                const cell = document.createElement("td");
+                const label = document.createElement("label");
+                const checkbox = document.createElement("input");
+
+                // Set checkbox properties
+                checkbox.type = "checkbox";
+                checkbox.className = "checkbox";
+                checkbox.value = pokemon;
+
+                // Set label text
+                label.textContent = pokemon;
+
+                // Append checkbox and label to the cell
+                label.prepend(checkbox);
+                cell.appendChild(label);
+
+                // Append the cell to the current row
+                row.appendChild(cell);
+            });
+        }
+
+        // Call the function to populate the table when the page loads
+        populateTable();
+    </script>
+</body>
+</html>

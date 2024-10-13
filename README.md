@@ -39,8 +39,34 @@ Each profile will have the ability to save strings they have created or strings 
 - **Database Data** - Any string that is created and saved will be stored in the websites database.
 - **Websocket Data** - On the Frequently Used page, users have the ability to see strings that others have shared.
 
+### HTML Startup
+**Things Added** 
+- Index
+  - Navigation bar in header
+  - Placemarker for login credentials
+  - Title
+  - All necessary buttons I want to use to generate a string
+  - Link to github at the bottom
+- Find Strings Page
+  - Navigation bar in header
+  - Placemarker for login credentials
+  - Placemarker for potential strings users may want to add
+    - Buttons to copy the strings
+    - This is where 3rd party calls will take place (new strings for relevant game events)
+    - Websocket technology will also go here as strings from over users will populate the Recently Used Strings
+  - Link to github at the bottom
+- Profile
+  - Navigation bar in header
+  - Placemarker for login credentials
+  - Placemarker for all saved strings to the user
+    - Copy, share, and edit buttons included (not implemented)
+    - This is where the database will hold specific information for each user
+  - Link to github at the bottom
+
+
 ![StringBuilderSketch](images/StringBuilder.jpg)
 
 ![FrequentlyUsedSketch](images/FrequentlyUsed.jpg)
 
 ![SavedStringsSketch](images/SavedStrings.jpg)
+

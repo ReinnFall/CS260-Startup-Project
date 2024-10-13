@@ -5,7 +5,7 @@
 # HTML
 - `<a href = "link url"> name of link to display </a>`
 - `img<src="address" alt="Placeholder Name" width=100>`
-- ./deployFiles.sh -k ~/Documents/BYU\ Assignments/2024\ Fall/CS260/GallantGuard475.pem -h pogostringbuilder.clicl -s startup
+- ./deployFiles.sh -k ~/Documents/BYU\ Assignments/2024\ Fall/CS260/GallantGuard475.pem -h pogostringbuilder.click -s startup
 
 ## Meta - Viewport
 The tag <meta name="viewport" content="width=device-width, initial-scale=1.0"> is used in web development to control how a webpage is displayed on different devices, particularly mobile devices. Here's a breakdown of what it does:

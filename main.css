@@ -38,3 +38,17 @@ nav a:hover {
     gap: 10px;
     /* border: 1px solid #ccc; adds a thin border around the div  */
   }
+  main{
+    display: flex;
+    flex-direction: column;
+  }
+  main h1{
+    text-align: center;
+  }
+  .stringbuilder{
+    text-align: center;
+  }
+  .stringbar{
+    width: 80%;
+    text-align: center;
+  }

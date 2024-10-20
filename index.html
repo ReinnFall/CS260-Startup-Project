@@ -4,6 +4,8 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Pokemon Go StringBuilder</title>
+
+        <link rel="stylesheet" href="main.css" />
         <link rel="icon" href="/images/poliwhirl.ico" />
     </head>
     <body>
@@ -16,21 +18,16 @@
                 </menu>
             </nav>
             <!-- FIXME - DONT USE FORM (JUST A PLACEHOLDER)-->
-            <form method="get" action="profile.html">
-                <div>
-                  <span>@</span>
-                  <input type="text" placeholder="your@email.com" />
-                </div>
-                <div>
-                  <span>🔒</span>
-                  <input type="password" placeholder="password" />
-                </div>
-                <button type="submit">Login</button>
-                <button type="submit">Create</button>
-              </form>
-            <h1>Pokemon Go StringBuilder</h1>
+            <div class="login">Login:
+                <form method="get" action="profile.html">
+                    <label for="name"></label>
+                    <input type="text" id="name" placeholder="Your name here" />
+                    <button type="submit">Login</button>
+                </form>
+            </div>
         </header>
         <main>
+            <h1>Pokemon Go StringBuilder</h1>
             <div>
                 <!-- Button to Generate String-->
                 <button id = "Generate String Button"> Generate String</button>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Button with Click Effect</title>
+  <style>
+    /* Styling the button */
+    .custom-button {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      border: none;
+      background-image: url('your-image.jpg'); /* Replace with your image */
+      background-size: cover;
+      cursor: pointer;
+      outline: none;
+    }
+
+    /* Hidden checkmark (appears on click) */
+    .custom-button::after {
+      content: '✔'; /* Checkmark */
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 48px;
+      color: rgba(0, 255, 0, 0.5); /* Semi-transparent green */
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    /* Show the checkmark when the button is clicked */
+    .custom-button.clicked::after {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <button class="custom-button"></button>
+
+  <script>
+    // Toggle the 'clicked' class on button click
+    const button = document.querySelector('.custom-button');
+    button.addEventListener('click', () => {
+      button.classList.toggle('clicked');
+    });
+  </script>
+
+</body>
+</html>

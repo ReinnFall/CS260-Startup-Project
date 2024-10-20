@@ -9,3 +9,24 @@ body{
     color: white;
     flex: 1;
   }
+header{
+    width: 100%;
+    /* border: 5px solid #ccc; */
+  }
+nav{
+    background-color: gray;
+    font-size: 1.5vw;
+}
+nav ul{
+    list-style-type: none;
+}
+.login{
+    display: flex;
+    flex: 1;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    position: absolute;
+    font-size: 1.5vw;
+    /* border: 1px solid #ccc; adds a thin border around the div  */
+  }

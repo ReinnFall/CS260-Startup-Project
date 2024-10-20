@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Header with Navigation and Login</title>
+
+  <style>
+    /* Reset some basic styling */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Header styling */
+    header {
+      display: flex;
+      justify-content: space-between; /* Push navigation left, login right */
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #333;
+      color: white;
+    }
+
+    /* Navigation area */
+    nav {
+      display: flex;
+      gap: 20px; /* Space between links */
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ddd;
+    }
+
+    /* Login area */
+    .login-area {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .login-area input {
+      padding: 5px;
+      border: none;
+      border-radius: 3px;
+    }
+
+    .login-area button {
+      padding: 5px 10px;
+      background-color: #007bff;
+      border: none;
+      border-radius: 3px;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .login-area button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <!-- Navigation on the left -->
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Login area on the right -->
+    <div class="login-area">
+      <input type="text" placeholder="Username">
+      <input type="password" placeholder="Password">
+      <button>Login</button>
+    </div>
+  </header>
+
+</body>
+</html>

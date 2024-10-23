@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Checkbox Buttons</title>
+  <style>
+    .button-wrapper {
+      position: relative; /* Ensures the checkmark is positioned relative to the button */
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+      margin: 10px;
+    }
+
+    .custom-button {
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      border: 2px solid #007bff;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .custom-button:hover {
+      transform: scale(1.1);
+    }
+
+    /* Hidden checkbox input */
+    input[type="checkbox"] {
+      display: none;
+    }
+
+    /* Checkmark overlay */
+    .checkmark {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 2rem;
+      color: green;
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+
+    /* Show the checkmark when the checkbox is checked */
+    input[type="checkbox"]:checked + .custom-button .checkmark {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="button-wrapper">
+    <input type="checkbox" id="btn1">
+    <label for="btn1" class="custom-button" style="background-image: url('https://via.placeholder.com/100/FF0000');">
+      <span class="checkmark">✔</span>
+    </label>
+  </div>
+
+  <div class="button-wrapper">
+    <input type="checkbox" id="btn2">
+    <label for="btn2" class="custom-button" style="background-image: url('https://via.placeholder.com/100/00FF00');">
+      <span class="checkmark">✔</span>
+    </label>
+  </div>
+
+  <div class="button-wrapper">
+    <input type="checkbox" id="btn3">
+    <label for="btn3" class="custom-button" style="background-image: url('https://via.placeholder.com/100/0000FF');">
+      <span class="checkmark">✔</span>
+    </label>
+  </div>
+
+</body>
+</html>

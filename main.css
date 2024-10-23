@@ -11,18 +11,21 @@ body{
     flex-direction: column;
     min-height: 100vh;
     flex: 1;
+    
   }
 header{
     background-color: gray;
     display: flex;
     justify-content: space-between; /* Gives a space in between nav and login */
     align-items: center;
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
+    padding: 2vh 3vw;
+    flex: 1;
   }
 nav{
     font-size: 1.5vw;
     display: flex;
-    gap: 20px; 
+    gap: 2.5vw;
 }
 nav a {
     color: black;
@@ -35,7 +38,7 @@ nav a:hover {
     font-size: 1.5vw;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 1.5vw;
     /* border: 1px solid #ccc; adds a thin border around the div  */
   }
   main{
@@ -76,11 +79,35 @@ nav a:hover {
   .custom_checkbox.clicked::after {
     opacity: 1;
   }
-  .search_title{
+  /* .search_title{
     align-items: center;
   }
-  .button.and.title{
+  .button_and_title{
     
+  } */
+  .string_modifiers_table{
+    text-align: center;
   }
-  
+  .gen_title{
+    padding: 1vw;
+  }
+  .gen_table{
+    text-align: center;
+  }
+
+  footer{
+    display: flex;
+    background-color: gray;
+    padding: 2vh 3vw;
+    flex: 1;
+    color: black;
+    text-decoration: none;
+  }
+  footer a {
+    color: inherit; /* or specify another color */
+    text-decoration: none; /* removes the underline */
+  }
+  footer a:hover{
+    background-color: #555;
+  }
   

@@ -41,7 +41,7 @@
                     <i class="bi bi-files"></i> 
                 </button>
             </div>
-            <table>
+            <table class="string_modifiers_table">
                 <tr>
                 <!-- First Row (6 checkboxes) -->
                 <td>
@@ -52,7 +52,7 @@
                 </td>
                 <td>
                     <div class="button_and_title"> 
-                        <button class="custom_checkbox legendary"></button>
+                        <button class= "custom_checkbox legendary"></button>
                         <div class="search_title">Legendary</div>
                     </div>
                 </td>
@@ -123,10 +123,13 @@
                 </tr>
             </table>
             <!-- I will eventually use JS to dynamically create checkboxes for each Pokemon-->
-            <table id="KantoTable">
-                <tbody> Kanto Table
-                    <button id="revealButton">Show All</button>
-                    <button id="selectAllButton">Select All</button>
+            <div>
+                <div class="gen_title">Kanto</div>
+                <button id="revealButton" class="btn btn-outline-primary">Show All</button>
+                <button id="selectAllButton" class="btn btn-outline-primary">Select All</button>
+            </div>
+            <table id="KantoTable" class="gen_table">
+                <tbody>
                     <tr>
                         <td><label><input type="checkbox" class="checkbox">Bulbasaur</label></td>
                         <td><label><input type="checkbox" class="checkbox">Ivysaur</label></td>

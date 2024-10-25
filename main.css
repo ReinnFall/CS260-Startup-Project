@@ -62,7 +62,7 @@ main h1{
     height: 100px;
     border: none;
     outline: none;
-    background-image: url('images/Shiny\ star.png');
+    /* background-image: url('images/Shiny\ star.png'); */
 }
 .custom_checkbox::after {
     content: '✔'; /* Checkmark */

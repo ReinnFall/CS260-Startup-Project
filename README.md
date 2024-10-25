@@ -63,6 +63,23 @@ Each profile will have the ability to save strings they have created or strings 
     - This is where the database will hold specific information for each user
   - Link to github at the bottom
 
+### CSS Startup
+**Things Added** 
+- All pages share the same header and footer
+  - Added a different login type
+  - Adjusts to resizing
+- Index
+  - Added placeholders for my custom buttons. I tried fully implementing them with CSS but I was told by a TA that it would probably be better to wait for React. So for now I've added the images I want for them and the place I want them (not including Dynamax and Gigantmax)
+  - I will also be adding images of every Pokemon, but thought it would be wise to have the checkbox done before adding it.
+  - Bootstraped my buttons including a copy button
+  - Used CSS to color, organize and style my page
+- FindStrings and Profile
+  - Added bootstrap to buttons
+  - Used CSS to color, organize and style my page
+
+
+
+
 
 ![StringBuilderSketch](images/StringBuilder.jpg)
 

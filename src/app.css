@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
   }
-body{
+.body{ /* added period in front, make sure this is intended behavior*/
     color: black;
     background-color: white;
     display: flex;

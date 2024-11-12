@@ -5,23 +5,23 @@ export function Home() {
     <main>
       <div>
       <h1>Pokemon Go StringBuilder</h1>
-        {/*}    <div class="stringbuilder">
+            <div className="stringbuilder">
                  
-                <button id = "Generate String Button" class="btn btn-outline-primary generateB"> Generate String</button>
+                <button id = "Generate String Button" className="btn btn-outline-primary generateB"> Generate String</button>
 
-                <input class="stringbar" type="text" value="Copy this text" id="inputBar"/>
+                <input className="stringbar" type="text" value="Copy this text" id="inputBar"/>
 
                
                 <button id="copyButton" class="btn btn-outline-primary copyB">
-                    <i class="bi bi-files"></i> 
+                    <i className="bi bi-files"></i> 
                 </button>
             </div>
-            <table class="string_modifiers_table">
+            <table className="string_modifiers_table">
                 <tr>
                 <td>
-                    <div class="button_and_title"> 
-                        <button class="custom_checkbox shiny" style="background-image: url('images/shiny.png');"></button>
-                        <div class="search_title">Shiny</div>
+                    <div className="button_and_title"> 
+                        <button className="custom_checkbox shiny" style="background-image: url('images/shiny.png');"></button>
+                        <div className="search_title">Shiny</div>
                     </div>
                 </td>
                 <td>
@@ -289,7 +289,7 @@ export function Home() {
                         <td><label><input type="checkbox" class="checkbox">Mew</input></label></td>
                     </tr>
                 </tbody>
-            </table> */}
+            </table>
         </div>
     </main>
   );

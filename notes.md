@@ -18,3 +18,5 @@ This sets the width of the viewport to be equal to the width of the device’s s
 
 initial-scale=1.0:
 This sets the initial zoom level of the webpage when it is first loaded. An initial scale of 1.0 means that the webpage will be displayed at 100% zoom, neither zoomed in nor out.
+
+You do not want to check this directory into your source control system since it can be very large and can be rebuilt using the information contained in the package.json and package-lock.json files. So make sure you include node_modules in your .gitignore file.
